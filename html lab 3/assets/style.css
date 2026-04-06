@@ -1,0 +1,66 @@
+/* Налаштування шрифтів згідно з варіантом 0 для останньої цифри */
+body {
+    font-family: "Verdana", sans-serif;
+}
+
+/* Колір заголовків згідно з варіантом 20 */
+h1, h2, h3 {
+    font-family: "Georgia", serif;
+    text-align: center;
+    color: #B45309; 
+}
+
+/* Секція 1: збільшений базовий шрифт та центрування */
+.subtitle {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Горизонтальне меню */
+.navigation {
+    padding-inline-start: 0px;
+    text-align: center;
+    list-style-type: none; /* Прибирає маркери списку, якщо вони з'являться */
+}
+
+.navigation li {
+    display: inline;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #B45309; /* Стилізовано в тон заголовків */
+    border-radius: 5px;
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none; /* Прибирає підкреслення з посилань */
+    font-size: 20px;
+}
+
+/* Прибираємо нумерацію з обох списків (маркованого та нумерованого) */
+.general-comp-list, .spec-comp-list {
+    list-style-type: none;
+}
+
+/* Налаштування таблиці */
+.components-table {
+    margin: 0 auto; /* Центрування таблиці */
+    border-collapse: collapse; /* Одинарні межі */
+    border: 1px solid #B45309;
+}
+
+.components-table th, .components-table td {
+    border: 1px solid #B45309; /* Колір меж аналогічний кольору заголовків */
+    padding: 8px; /* Додано відступи для кращої читабельності */
+}
+
+/* Налаштування "зебри" для таблиці згідно з варіантом 20 */
+.components-table tr:nth-child(even) {
+    background-color: #FFFBF0; 
+}
+
+/* Центрування зображення */
+.image-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
