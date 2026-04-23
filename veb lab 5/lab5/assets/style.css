@@ -1,0 +1,260 @@
+/* --- ОСНОВНІ НАЛАШТУВАННЯ (Шрифти та кольори з ЛР 3/4) --- */
+body {
+    font-family: "Garamond", serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+h1, h2, h3 {
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+    color: #0369A1;
+}
+
+/* --- HEADER (Вимога: висота 350px) --- */
+header {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    padding: 15px 30px;
+    background-color: #F0F9FF; /* Фон як у клітинках таблиці */
+    border-radius: 8px;
+    border: 1px solid #0369A1;
+    font-size: 22pt;
+}
+
+/* --- НАВІГАЦІЯ --- */
+.navigation {
+    padding-inline-start: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border: 1px solid #0369A1;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.navigation li:hover {
+    background-color: #F0F9FF;
+}
+
+.navigation a {
+    color: #0369A1;
+    text-decoration: none;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+/* --- КОНТЕЙНЕР (Вимога: макс. 900px, по центру) --- */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 60vh;
+}
+
+/* --- ЦЕНТРУВАННЯ ІНФОРМАЦІЇ ТА МЕТИ (Вимога ЛР 5) --- */
+.centered-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.goal-text {
+    max-width: 800px;
+    margin: 20px auto;
+    font-style: italic;
+    color: #444;
+}
+
+/* --- IFRAME (Вимога ЛР 5: PDF та YouTube) --- */
+.frame-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 40px 0;
+}
+
+.frame {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    border: 2px solid #0369A1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- ФОРМА "ШВИДКА КОНСУЛЬТАЦІЯ" (Вимога: по центру, як у ЛР 4) --- */
+.form-section {
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#feedbackForm {
+    width: 100%;
+    max-width: 450px;
+    background-color: #F0F9FF;
+    padding: 30px;
+    border: 2px solid #0369A1;
+    border-radius: 15px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+#feedbackForm label {
+    font-weight: bold;
+    color: #0369A1;
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Helvetica", sans-serif;
+}
+
+#feedbackForm input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: "Garamond", serif;
+    font-size: 12pt;
+    box-sizing: border-box;
+}
+
+#feedbackForm input:focus {
+    border-color: #0369A1;
+    outline: none;
+    background-color: #fff;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #0369A1;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 13pt;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Helvetica", sans-serif;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #024b75;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* --- ТАБЛИЦЯ ТА СПИСКИ (Для інших сторінок) --- */
+.components-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+.components-table th, .components-table td {
+    border: 1px solid #0369A1;
+    padding: 12px;
+}
+
+.components-table tr:nth-child(even) {
+    background-color: #F0F9FF;
+}
+
+.general-comp-list, .spec-comp-list {
+    padding-left: 20px;
+}
+
+/* --- РОБОЧА ГРУПА (Display inline-block) --- */
+.authors {
+    text-align: center;
+}
+
+.author {
+    width: 260px;
+    display: inline-block;
+    margin: 15px;
+    vertical-align: top;
+    border: 1px solid #0369A1;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-bottom: 15px;
+}
+
+.author img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 9px 9px 0 0;
+}
+
+/* --- FOOTER --- */
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #F0F9FF;
+    border-top: 3px solid #0369A1;
+    font-weight: bold;
+    color: #333;
+    margin-top: 50px;
+}
+
+/* --- АДАПТИВНІСТЬ (Вимога: до 768px) --- */
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 40px 15px;
+    }
+
+    .navigation li {
+        display: block;
+        margin: 8px auto;
+        width: 90%;
+    }
+
+    .frame {
+        height: 350px;
+    }
+
+    .author {
+        width: 100%;
+        max-width: 300px;
+    }
+}

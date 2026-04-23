@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіти | Лабораторна робота 5</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <style>
+        /* Додаткові стилі для зручного читання звітів */
+        .report-item {
+            margin-bottom: 50px;
+            padding: 25px;
+            background-color: #ffffff;
+            border: 1px solid #0369A1;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .report-item h3 {
+            text-align: left;
+            border-bottom: 2px solid #0369A1;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .report-content p {
+            margin: 10px 0;
+        }
+        .report-content ul, .report-content ol {
+            padding-left: 20px;
+        }
+        .report-content li {
+            margin-bottom: 8px;
+        }
+        .report-label {
+            font-weight: bold;
+            color: #0369A1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Інформаційна, бібліотечна та архівна справа</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="./index.html">Головна</a></li>
+                <li><a href="./group.html">Робоча група</a></li>
+                <li><a href="./competencies.html">Компетенції</a></li>
+                <li><a href="./components.html">Компоненти</a></li>
+                <li><a href="./graph.html">Схема</a></li>
+                <li><a href="./reports.html">Звіти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Звіти з лабораторних робіт</h2>
+
+        <article class="report-item">
+            <h3>Лабораторна робота №1</h3>
+            <div class="report-content">
+                <p><span class="report-label">Тема:</span> Знайомство з основами веб-розробки та системами контролю версій.</p>
+                <p><span class="report-label">Мета:</span> Навчитись розгортати локальний веб-сервер, створювати базові HTML-документи та працювати з системою контролю версій Git.</p>
+                <p><span class="report-label">Хід роботи:</span></p>
+                <ol>
+                    <li>Встановлено локальний веб-сервер (XAMPP) та створено робочу директорію <code>webdev</code>.</li>
+                    <li>Створено початковий файл <code>lab1.html</code> із базовою структурою HTML-документа.</li>
+                    <li>Додано заголовок першого рівня з назвою освітньої програми: "Інформаційна, бібліотечна та архівна справа".</li>
+                    <li>Розміщено три абзаци з інформацією про рівень вищої освіти, галузь знань та спеціальність (магістр, Культура, мистецтво та гуманітарні науки, В 13).</li>
+                    <li>Додано інформацію про виконавця роботи (Микола Блискун).</li>
+                    <li>Ініціалізовано Git-репозиторій, зроблено коміт та завантажено виконану роботу на GitHub.</li>
+                </ol>
+                <p><span class="report-label">Висновок:</span> Засвоєно основи роботи з локальним сервером та базовими тегами розмітки HTML. Отримано практичні навички роботи з GitHub.</p>
+            </div>
+        </article>
+
+        <article class="report-item">
+            <h3>Лабораторна робота №2</h3>
+            <div class="report-content">
+                <p><span class="report-label">Тема:</span> Структурування HTML-документів: списки та таблиці.</p>
+                <p><span class="report-label">Мета:</span> Навчитись структурувати контент веб-сторінки за допомогою заголовків, списків та HTML-таблиць.</p>
+                <p><span class="report-label">Хід роботи:</span></p>
+                <ol>
+                    <li>За основу взято код попередньої лабораторної роботи.</li>
+                    <li>Додано розділ "Мета освітньої програми" з відповідним описом.</li>
+                    <li>Сформовано переліки загальних компетентностей (маркований список) та фахових компетентностей (нумерований список).</li>
+                    <li>Створено детальну таблицю з переліком компонент освітньої програми (дисципліни, кредити, форми контролю).</li>
+                    <li>Використано теги акцентування тексту для виділення важливих назв.</li>
+                </ol>
+                <p><span class="report-label">Висновок:</span> Навченося логічно структурувати великі масиви інформації на сторінці за допомогою інструментів HTML.</p>
+            </div>
+        </article>
+
+        <article class="report-item">
+            <h3>Лабораторна робота №3</h3>
+            <div class="report-content">
+                <p><span class="report-label">Тема:</span> Основи каскадних таблиць стилів (CSS).</p>
+                <p><span class="report-label">Мета:</span> Ознайомитись із підключенням зовнішніх стилів, форматуванням тексту та створенням якірної навігації.</p>
+                <p><span class="report-label">Хід роботи:</span></p>
+                <ol>
+                    <li>На сторінку інтегровано зображення структурно-логічної схеми.</li>
+                    <li>Створено та підключено файл <code>style.css</code>.</li>
+                    <li>Налаштовано шрифти: <code>Helvetica</code> для заголовків та <code>Garamond</code> для тексту.</li>
+                    <li>Створено горизонтальне меню з якорями для швидкої навігації між секціями.</li>
+                    <li>Застосовано кольорову схему (синій/світло-блакитний) та ефект "зебри" для таблиць.</li>
+                    <li>Відцентровано всі ключові елементи сторінки.</li>
+                </ol>
+                <p><span class="report-label">Висновок:</span> Опановано базові методи стилізації веб-сторінок та принципи візуальної ієрархії контенту.</p>
+            </div>
+        </article>
+
+        <article class="report-item">
+            <h3>Лабораторна робота №4</h3>
+            <div class="report-content">
+                <p><span class="report-label">Тема:</span> Семантична розмітка HTML5, багатосторінкові сайти та веб-форми.</p>
+                <p><span class="report-label">Мета:</span> Освоїти семантичні теги, створення багатосторінкових ресурсів та форм із валідацією.</p>
+                <p><span class="report-label">Хід роботи:</span></p>
+                <ol>
+                    <li>Впроваджено семантичні теги <code>header</code>, <code>nav</code>, <code>main</code>, <code>footer</code>.</li>
+                    <li>Налаштовано висоту хедера (350px) та оформлено футер із копірайтом.</li>
+                    <li>Розділено контент на 5 окремих HTML-файлів зі спільною навігацією.</li>
+                    <li>Створено сторінку "Робоча група" з картками викладачів (<code>inline-block</code>).</li>
+                    <li>Обгорнуто контент у контейнер з обмеженням ширини 900px.</li>
+                    <li>Додано форму "Швидка консультація" з валідацією телефону (<code>pattern</code>) та часу.</li>
+                    <li>Протестовано відображення на екранах до 768px.</li>
+                </ol>
+                <p><span class="report-label">Висновок:</span> Створено повноцінний багатосторінковий сайт, готовий до адаптивного використання.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Микола Блискун &copy; ІФНТУНГ, 2026 р.</p>
+    </footer>
+
+</body>
+</html>
