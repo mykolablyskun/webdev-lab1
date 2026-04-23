@@ -1,0 +1,45 @@
+body{
+    font-family: "Garamond", sans-serif;
+}
+h1,h2,h3{
+    font-family: "Helvetica", serif;
+    text-align: center;
+    color:#0369A1;
+}
+.navigation{
+    padding-inline-start:0px;
+    text-align: center;
+}
+.navigation a{
+    color:black;
+    text-decoration: none;
+    font-size: 24px;
+}
+.navigation li{
+    display: inline;
+    padding: 10px;
+    margin:0 10px;
+    border:1px solid;
+    border-radius:5px;
+}
+.components-table{
+    margin: 0 auto;
+    border:1px solid black;
+    border-collapse: collapse;
+}
+.components-table td{
+    border:1px solid black;
+}
+.components-table tr:nth-child(even) {
+  background-color: #F0F9FF; 
+}
+.subtitle{
+    font-size:18px;
+    text-align: center;
+}
+.image-container{
+    text-align: center;
+}
+.general-comp-list,.spec-comp-list{
+    list-style-type: none;
+}
