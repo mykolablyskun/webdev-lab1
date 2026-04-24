@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна | Лабораторна робота 6</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Інформаційна, бібліотечна та архівна справа</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="./index.html">Головна</a></li>
+                <li><a href="./group.html">Робоча група</a></li>
+                <li><a href="./competencies.html">Компетенції</a></li>
+                <li><a href="./components.html">Компоненти</a></li>
+                <li><a href="./graph.html">Схема</a></li>
+                <li><a href="./reports.html">Звіти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="centered-info">
+            <p class="subtitle">Рівень вищої освіти: магістр</p>
+            <p class="subtitle">Галузь знань: В Культура, мистецтво та гуманітарні науки</p>
+            <p class="subtitle">Спеціальність: В 13 Бібліотечна, інформаційна та архівна справа</p>
+            
+            <h2 id="goal">Мета освітньої програми</h2>
+            <p class="goal-text">
+                Підготовка висококваліфікованих професіоналів з інформаційної, бібліотечної та архівної справи, 
+                які володіють необхідними знаннями інноваційного характеру, уміють застосовувати навички 
+                організаційно-управлінської діяльності та використання інформаційних ресурсів, продуктів та послуг.
+            </p>
+        </div>
+
+        <hr>
+
+        <h2 class="section-title">Профіль освітньої програми (PDF)</h2>
+        <div class="frame-container">
+            <iframe class="frame" 
+                src="https://drive.google.com/file/d/1z55GU8B8xONspc-5l_AXdxOsaH4Dsxne/preview" 
+                title="Освітня програма">
+            </iframe>
+        </div>
+
+        <h2 class="section-title">Відеопрезентація ІФНТУНГ</h2>
+        <div class="frame-container">
+            <iframe class="frame"
+                src="https://www.youtube.com/embed/bVwK8GilNeQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="form-section">
+            <h2 class="center-text">Швидка консультація</h2>
+            <div class="form-container">
+                <form id="feedbackForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="fullname">ПІБ:</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Ваше Прізвище Ім'я По батькові">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон (098-123-4567):</label>
+                        <input type="tel" id="phone" name="phone" required 
+                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                               title="Формат: 098-123-4567" 
+                               placeholder="098-123-4567">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="call_time">Зручний час дзвінка (09:00 - 18:00):</label>
+                        <input type="time" id="call_time" name="call_time" required min="09:00" max="18:00">
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Замовити консультацію</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Микола Блискун &copy; ІФНТУНГ, 2026 р.</p>
+    </footer>
+
+</body>
+</html>

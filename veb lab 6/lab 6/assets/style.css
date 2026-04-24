@@ -1,0 +1,268 @@
+/* --- БАЗОВІ СТИЛІ --- */
+/* Універсальне правило для правильного розрахунку розмірів блоків */
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Garamond", serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden; /* Заборона горизонтального скролу всієї сторінки */
+}
+
+h1, h2, h3 {
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+    color: #0369A1;
+}
+
+/* --- HEADER --- */
+header {
+    min-height: 350px;
+    background-color: #F0F9FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #0369A1;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* --- НАВІГАЦІЯ --- */
+.navigation {
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    list-style-type: none;
+    gap: 10px;
+}
+
+.navigation li {
+    border: 1px solid #0369A1;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.navigation li:hover {
+    background-color: #F0F9FF;
+}
+
+.navigation a {
+    color: #0369A1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+/* --- КОНТЕЙНЕР --- */
+.container {
+    width: 100%;
+    max-width: 900px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* =========================================================
+   НОВИЙ ДИЗАЙН РОБОЧОЇ ГРУПИ (Замінено за проханням)
+   Побудовано на Flexbox за завданням ЛР №6
+   ========================================================= */
+.authors {
+    display: flex;
+    justify-content: center; /* Центруємо картки на великих екранах */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Дозволяємо перенос на новий рядок */
+    gap: 30px; /* Збільшений відступ між картками */
+    margin-top: 20px;
+}
+
+.author {
+    width: calc(33.33% - 20px); /* 3 картки в ряд на десктопі */
+    min-width: 260px; /* Мінімальна ширина для адекватного вигляду */
+    display: flex;
+    flex-direction: column; /* Елементи картки один під одним */
+    align-items: flex-start; /* Вирівнювання всього вмісту по лівому краю */
+    /* Видалено border та background-color для чистішого вигляду */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стиль фотографії (Квадрат із закругленими кутами) */
+.author img {
+    width: 100%; /* На всю ширину картки */
+    height: auto; /* Зберігаємо пропорції */
+    aspect-ratio: 1 / 1; /* Робимо зображення квадратним */
+    object-fit: cover; /* Обрізаємо зайве, зберігаючи центр */
+    border-radius: 12px; /* Гарні закруглені кути */
+    margin-bottom: 15px; /* Відступ від фото до тексту */
+}
+
+/* Стиль Ім'я (Синій, Болд, Вирівняно по лівому краю) */
+.author h3 {
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700; /* Болд, як на скріншоті */
+    color: #0369A1; /* Твій синій колір */
+    margin: 5px 0;
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+    width: 100%;
+}
+
+/* Стиль Посади (Темно-сірий, Тонкий, Вирівняно по лівому краю) */
+.author p {
+    font-family: "Garamond", serif;
+    font-size: 0.95rem;
+    color: #555; /* Темно-сірий колір тексту */
+    margin: 0;
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+    width: 100%;
+    line-height: 1.4;
+}
+
+/* --- ТАБЛИЦЯ ТА ГРАФІК --- */
+.components-table {
+    margin: 20px auto;
+    width: 100%;
+    border: 1px solid #0369A1;
+    border-collapse: collapse;
+}
+
+.components-table td, .components-table th {
+    border: 1px solid #0369A1;
+    padding: 12px;
+}
+
+.components-table tr:nth-child(even) {
+    background-color: #F0F9FF; 
+}
+
+.graph-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- ФОРМА --- */
+.form-container {
+    text-align: center;
+}
+
+#feedbackForm {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #F0F9FF;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #0369A1;
+}
+
+#feedbackForm input, #feedbackForm button {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+#feedbackForm button {
+    background-color: #0369A1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* --- ФРЕЙМИ --- */
+.frame {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #0369A1;
+    margin: 20px 0;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #F0F9FF;
+    border-top: 2px solid #0369A1;
+    margin-top: 40px;
+}
+
+/* =========================================================
+   МЕДІА-ЗАПИТИ ДЛЯ АДАПТИВНОСТІ (375px)
+   ========================================================= */
+
+@media screen and (max-width: 375px) {
+    header {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    /* Адаптація нових карток для мобільного */
+    .authors {
+        flex-direction: column; /* Картки одна під одною */
+        align-items: center; /* Центруємо картки на екрані */
+        gap: 25px;
+    }
+
+    .author {
+        width: 100%; /* Картка на всю ширину */
+        max-width: 300px; /* Але не ширше 300px, щоб не розповзалася */
+    }
+
+    /* Внутрішній скрол тільки для таблиці */
+    .components-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .frame {
+        height: 250px;
+    }
+}
